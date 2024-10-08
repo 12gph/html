@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "API Logger",
+  "version": "1.0",
+  "permissions": [
+    "storage",
+    "tabs",
+    "downloads",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
